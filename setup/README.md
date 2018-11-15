@@ -161,4 +161,4 @@ Follow the installation instructions for your mobile device on the [official Exp
 
 Create an Expo account via the [offical Expo website](https://expo.io/signup)
 
-Now you have successfully setup Expo and your AWS Cloud9 in your AWS Console. You can now proceed to [Lab 1](../mobilehub) to work on setting up the AWS Amplify CLI [TODO].
+Now you have successfully setup Expo and your AWS Cloud9 in your AWS Console. You can now proceed to [Lab 2](../amplify) to work on setting up the AWS Amplify CLI [TODO].
