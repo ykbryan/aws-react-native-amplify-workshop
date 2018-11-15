@@ -163,9 +163,8 @@ amplify push
 query getUsers{
   listUsers{
     items {
-      UserId
-      Email
-      Name
+      id
+      name
     }
   }
 }
