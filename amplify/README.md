@@ -3,13 +3,13 @@
 AWS Amplify provides a declarative and easy-to-use interface across different categories of cloud operations. AWS Amplify goes well with any JavaScript based frontend workflow, and React Native for mobile developers.
 
 ## Table of Contents:
-* [Install the CLI](#install-aws-mobile-cli)
+* [Install the CLI (OPTIONAL)](#install-aws-mobile-cli)
 * [Configure AWS Mobile CLI](#configure-aws-mobile-cli)
 * [Create AWS mobile project](#create-aws-mobile-project)
 * [Add Cognito user pool](#add-cognito-user-pool)
 * [Create Cognito user](#create-a-cognito-user)
 
-## Install AWS Amplify CLI
+## Install AWS Amplify CLI (OPTIONAL)
 
 The Amplify Command Line Interface (CLI) is a unified toolchain to create, integrate, and manage the AWS cloud services for your app.
 
