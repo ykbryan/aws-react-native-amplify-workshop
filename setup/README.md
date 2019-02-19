@@ -145,7 +145,7 @@ This step allows us to use AWS Cloud9 to be the IDE for our React Native project
 cd ~/environment/rn
 
 docker run -it --rm -p 19000:19000 -p 19001:19001 \
--v "$PWD:/code" --user $UID \
+-v "$PWD:/code" --user ec2-user \
 -v /home/ec2-user/.awsmobilejs:/home/ec2-user/.awsmobilejs \
 -e REACT_NATIVE_PACKAGER_HOSTNAME=`curl -s http://169.254.169.254/latest/meta-data/public-ipv4` \
  reactnative-expo:latest bash
