@@ -3,78 +3,9 @@
 AWS Amplify provides a declarative and easy-to-use interface across different categories of cloud operations. AWS Amplify goes well with any JavaScript based frontend workflow, and React Native for mobile developers.
 
 ## Table of Contents:
-* [Install the CLI (OPTIONAL)](#install-aws-mobile-cli)
-* [Configure AWS Mobile CLI](#configure-aws-mobile-cli)
-* [Create AWS mobile project](#create-aws-mobile-project)
+* [Initialise a development project](#initialise-a-development-project)
 * [Add Cognito user pool](#add-cognito-user-pool)
-* [Create Cognito user](#create-a-cognito-user)
-
-## Install AWS Amplify CLI (OPTIONAL)
-
-The Amplify Command Line Interface (CLI) is a unified toolchain to create, integrate, and manage the AWS cloud services for your app.
-
-Install Node.js® and npm if they are not already on your machine.
-
-```
-npm install -g npm node
-```
-
-**Verify** that you are running at least Node.js version 8.x or greater and npm version 5.x or greater by running `node -v` and `npm -v` in a terminal/console window.
-
-```
-npm install -g @aws-amplify/cli
-```
-
-Check your amplify CLI version
-
-```
-amplify --version
-```
-
-## Configure Amplify CLI
-
-
-Run this command inside the react-native docker environment:
-```
-amplify configure
-```
-
-You should see:
-```
-Follow these steps to set up access to your AWS account:
-
-Sign in to your AWS administrator account:
-https://console.aws.amazon.com/
-Press Enter to continue
-```
-
-Follow the steps and instructions and complete the user creation using the AWS console. You should see:
-
-```
-Specify the AWS Region
-? region:  ap-southeast-1
-Specify the username of the new IAM user:
-? user name:  amplify-abcdef
-Complete the user creation using the AWS console
-https://console.aws.amazon.com/iam/home?region=undefined#/users$new?step=final&accessKey&userNames=amplify-abcdef&permissionType=policies&policies=arn:aws:iam::aws:policy%2FAdministratorAccess
-Press Enter to continue
-
-```
-Go to the URL specific in the terminal console.
-
-Once the IAM user is created, download/copy your AWS credentials and press Enter the continue.
-
-You should see:
-
-```
-Enter the access key of the newly created user:
-? accessKeyId:  AKIAJOXMRD**********
-? secretAccessKey:  QndYVy5+QBHS2/waNbhD********************
-This would update/create the AWS Profile in your local machine
-? Profile Name:  default
-```
-
-Then you should see `Successfully set up the new user.`
+* [Create a Cognito user](#create-a-cognito-user)
 
 ## Initialise a development project
 
@@ -101,8 +32,36 @@ Using default provider awscloudformation
 For more information on AWS Profiles, see:
 https://docs.aws.amazon.com/cli/latest/userguide/cli-multiple-profiles.html
 
+Using default provider  awscloudformation
+AWS access credentials can not be found.
+? Setup new user Yes
+Follow these steps to set up access to your AWS account:
+
+Sign in to your AWS administrator account:
+https://console.aws.amazon.com/
+Press Enter to continue
+
+Specify the AWS Region
+? region:  ap-southeast-1
+Specify the username of the new IAM user:
+? user name:  amplify-user
+Complete the user creation using the AWS console
+https://console.aws.amazon.com/iam/home?region=undefined#/users$new?step=final&accessKey&userNames=amplify-user&permissionType=policies&policies=arn:aws:iam::aws:policy%2FAdministratorAccess
+Press Enter to continue
+
+Enter the access key of the newly created user:
+? accessKeyId:  XXXXXX**********
+? secretAccessKey:  XXXXXXXXXXX********************
+This would update/create the AWS Profile in your local machine
+? Profile Name:  default
+
+Successfully set up the new user.
+
+For more information on AWS Profiles, see:
+https://docs.aws.amazon.com/cli/latest/userguide/cli-multiple-profiles.html
+
 ? Do you want to use an AWS profile? Yes
-? Please choose the profile you want to use default
+? Please choose the profile you want to use. default
 ```
 
 Then you should see a bunch of `CREATE_IN_PROGRESS` commands running at the background for you. These are cloudformation templates that are automatically generated via the `init` command.
@@ -180,7 +139,7 @@ Press `Y` and `Enter` to confirm. This will take a few minutes to run. Once done
 ✔ All resources are updated in the cloud
 ```
 
-## Create a Cognito user manually for testing
+## Create a Cognito user
 1. Let's set up a user for testing. Navigate to your [Cognito Console](https://console.aws.amazon.com/cognito/home)
 
 2. Select **Manage Identity Pools**
