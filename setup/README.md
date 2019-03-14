@@ -7,6 +7,7 @@ We will be using React-Native and [Expo](https://expo.io) to develop our mobile 
 
 **Configure Cloud9**
 * [Create Cloud9 environment](#create-cloud9-environment)
+* [Update Preference](#update-preference)
 * [Allocate storage](#allocate-storage)
 * [Configure security group](#configure-security-group)
 
@@ -35,6 +36,18 @@ We will be using React-Native and [Expo](https://expo.io) to develop our mobile 
 
 7. After a few minutes, when your environment is up, you should see following screen.
 ![AWS Cloud9](images/aws-cloud9.jpg)
+
+## Update Preference
+
+We are going to create a new IAM user with the required access to the AWS resources. So, we do not need AWS Cloud9 to manage temporary credentials for us. 
+
+1. Go to the **Preference** via the top panel
+![AWS Cloud9 Preference](images/aws-cloud9-preference.png)
+
+2. At Preference, go to **AWS Setting**
+
+3. Disable **AWS managed temporary credentials**
+![AWS Cloud9 Preference](images/aws-cloud9-preference-credentials.png)
 
 ## Allocate storage
 Your Cloud9 instance is allocated 8 GB storage by default. We will increase this because we will be installing dependencies.
@@ -149,6 +162,7 @@ cd ~/environment/rn
 
 docker run -it --rm -p 19000:19000 -p 19001:19001 \
 -v "$PWD:/code" --user $UID \
+-v /home/ec2-user/.aws:/home/ec2-user/.aws \
 -v /home/ec2-user/.awsmobilejs:/home/ec2-user/.awsmobilejs \
 -e REACT_NATIVE_PACKAGER_HOSTNAME=`curl -s http://169.254.169.254/latest/meta-data/public-ipv4` \
  reactnative-expo:latest bash
