@@ -187,7 +187,7 @@ First, let's add a new Lambda function in the AWS Console.
     - Role: Choose a new role
     - Role Name: lamba-cognito-dynamodb-execution
 4. Click "Create function" to proceed
-5. At the function code, copy/replace the code from `/code/lambda/lambda-cognito-dynamodb-table-put.py` 
+5. At the function code, copy/replace the [code](https://raw.githubusercontent.com/ykbryan/aws-amplify-sample-react-native-app/master/lambda/lambda-cognito-dynamodb-table-put.py) from `/code/lambda/lambda-cognito-dynamodb-table-put.py` 
 6. At the top right corner, click "Save" to proceed.
 
 Now, that we have setup the Lambda function, we need to give the function the right IAM permission. 
