@@ -10,14 +10,6 @@
 
 ## Setup & Run The React Native App
 
-We have prepared a sample app for you in this exercise. Simple `git clone` the repo `https://github.com/ykbryan/aws-amplify-sample-react-native-app` into another folder and copy the content to your `rn` folder on the following commands:
-
-```
-git clone https://github.com/ykbryan/aws-amplify-sample-react-native-app app
-mv app/* .
-rm -Rf app/
-```
-
 Make sure you are **inside React Native Docker** environment, you can now run the following command:
 ```
 cd /code && yarn

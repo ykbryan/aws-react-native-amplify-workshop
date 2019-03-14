@@ -9,6 +9,15 @@ AWS Amplify provides a declarative and easy-to-use interface across different ca
 
 ## Initialise a development project
 
+We have prepared a sample app for you in this exercise. Simple `git clone` the repo `https://github.com/ykbryan/aws-amplify-sample-react-native-app` into another folder and copy the content to your `rn` folder on the following commands:
+
+```
+cd /code
+git clone https://github.com/ykbryan/aws-amplify-sample-react-native-app app
+mv app/* .
+rm -Rf app/
+```
+
 Run this command inside the react-native docker environment. 
 
 **IMPORTANT**: Ensure you are in the ```/code``` directory.
