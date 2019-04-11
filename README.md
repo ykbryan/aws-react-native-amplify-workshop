@@ -51,3 +51,7 @@ If you ever need to clean up your AWS account, you just need to run the followin
 ```
 amplify delete
 ```
+
+And delete your AWS Cloud9 instance. 
+
+![ ](http://bit.ly/aws-react-native-amplify-workshop)
