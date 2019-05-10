@@ -37,9 +37,9 @@ Setup AppSync & configure Cognito trigger in AWS console with AWS Lambda
 ## [Lab 4](app/)
 Run your React Native App on your Mobile Device!
 
-## [Lab 5](cicd/) 
+<!-- ## [Lab 5](cicd/) 
 CI/CD for your React Native App
-
+ -->
 
 #####  FootNote
 **Boh Jio** : You didn't invite me. Hokkien or Teochew pronunciation of "無招" (Mandarin 没招 méi-zhāo). *Reference: Singlish Vocabulary* (https://en.wikipedia.org/wiki/Singlish_vocabulary)
