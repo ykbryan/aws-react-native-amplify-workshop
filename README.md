@@ -41,9 +41,6 @@ Run your React Native App on your Mobile Device!
 CI/CD for your React Native App
  -->
 
-#####  FootNote
-**Boh Jio** : You didn't invite me. Hokkien or Teochew pronunciation of "無招" (Mandarin 没招 méi-zhāo). *Reference: Singlish Vocabulary* (https://en.wikipedia.org/wiki/Singlish_vocabulary)
-
 ## Clean up
 
 If you ever need to clean up your AWS account, you just need to run the following command in your AWS Cloud9 environment:
