@@ -103,18 +103,45 @@ You should see:
 ```
 Using service: Cognito, provided by: awscloudformation
  The current configured provider is Amazon Cognito. 
- Do you want to use the default authentication and security configuration? (Use arrow keys)
-❯ Yes, use the default configuration. 
-  No, I will set up my own configuration. 
+ Do you want to use the default authentication and security configuration? 
+❯ Default configuration 
+  Default configuration with Social Provider (Federation) 
+  Manual configuration 
   I want to learn more. 
 ```
 
 You can choose to setup your own configuration. At this point, let's choose the default configuration. Press `Enter`
 
-You should see:
+```
+ Warning: you will not be able to edit these selections. 
+ How do you want users to be able to sign in when using your Cognito User Pool? (Use arrow keys)
+❯ Username 
+  Email 
+  Phone Number 
+  Email and Phone Number 
+  I want to learn more. 
+```
+
+Select `Username` and press `Enter` to continue. 
 
 ```
-Successfully added resource cognito80421876 locally
+ Warning: you will not be able to edit these selections. 
+ What attributes are required for signing up? (Press <space> to select, <a> to toggle all, <i> to invert selection)
+❯◯ Address (This attribute is not supported by Facebook, Google, Login With Amazon.)
+ ◯ Birthdate (This attribute is not supported by Login With Amazon.)
+ ◉ Email
+ ◯ Family Name (This attribute is not supported by Login With Amazon.)
+ ◯ Middle Name (This attribute is not supported by Google, Login With Amazon.)
+ ◯ Gender (This attribute is not supported by Login With Amazon.)
+ ◯ Locale (This attribute is not supported by Facebook, Google.)
+(Move up and down to reveal more choices)
+```
+
+Select `Email` as the required attributes. Press `Enter` and now, you should see:
+
+```
+Successfully added auth resource
+```
 
 Some next steps:
 "amplify push" will build all your local backend resources and provision it in the cloud
@@ -164,4 +191,4 @@ Press `Y` and `Enter` to confirm. This will take a few minutes to run. Once done
 
 6. Check that your newly created user is in the users table with the status column set to **FORCE_CHANGE_PASSWORD** and enabled column set to **ENABLED**
 
-You have successfully configured the AWS Mobile for your mobile app. Next, you can proceed to [Lab 2](../appsync) to work on setting the AWS AppSync.
+You have successfully configured the AWS Mobile for your mobile app. Next, you can proceed to [Lab 3](../appsync) to work on setting the AWS AppSync.

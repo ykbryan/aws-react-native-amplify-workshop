@@ -147,6 +147,31 @@ Save the file again, and enter the following command to push your changes to the
 amplify push
 ```
 
+You should begin to see the following:
+
+```
+GraphQL schema compiled successfully.
+Edit your schema at /Volumes/Data/Git/aws-amplify-app/amplify/backend/api/awsamplifyapp/schema.graphql or place .graphql files in a directory at /Volumes/Data/Git/aws-amplify-app/amplify/backend/api/awsamplifyapp/schema
+```
+
+Since we are providing you the app, you do not need to generate code for your GraphQL API. Enter `n` and continue.
+
+```
+? Do you want to generate code for your newly created GraphQL API (Y/n) n
+```
+
+Now, you can wait for the resources in the terminal.
+
+```
+⠸ Updating resources in the cloud. This may take a few minutes...
+```
+
+Until you see the success message in the following:
+
+```
+✔ All resources are updated in the cloud
+```
+
 ## Test your query
 
 1. Before you proceed to test your AppSync query, you will need your **ClientId** in the Cognito. Note that it is not your AWS access key. Go to your Cognito UserPool console, under App clients, you can find your respective **ClientId**.
