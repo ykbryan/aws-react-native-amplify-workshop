@@ -51,6 +51,6 @@ Follow following instructions to get this application to work on your phone.
 
 ## Bonus Exercise
 Notice that some part of the app might not be working. You are not complete the following in order to make this app work:
-1. Complete the graphql query events at `screen/home/Home.js`
-2. Complete the graphql mutation events at `screen/event/EventDetail.js`
-3. Complete the graphql subscription to get new messages at `screen/event/ChatRoom.js`
+1. Complete the graphql query events at `src/graphql/events.js`
+2. Complete the graphql mutation follower at `src/graphql/followers.js`
+3. Complete the graphql subscription to get new messages at `src/graphql/chats.js`
